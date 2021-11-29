@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
 <head>
     <title>Kaevandamine</title>
+    <meta charset="UTF-8">
     <link rel=stylesheet href='main.css'>
+    <link rel=stylesheet href='kaevandamine.css'>
 </head>
 <body>
+    <a class= 'link2' href=main.html>Tagasi</a>
     <div class=row>
         <div class=column>
             <h1>Mis see on?</h1>
@@ -12,22 +15,28 @@
                 Kaevandamine on protsess, kus usaldatud validaator kinnitab erinevate algoritmide kaudu tehingu, 
                 mis lisatakse uue plokina ahelasse ning validaator saab tehtud töö eest tasu ehk krüptovaluutat.
             </p>
-            <h2>Proof of work</h2>
+            <h1>Proof of work</h1>
             <p class='p2'>
                 Kui valuuta kasutab PoW algoritmi siis selleks, et tehing kinnitada tuleb see lisada plokiahelasse 
                 uue plokina. Selleks, et seda teha on vaja teada eelmise ploki räsi, mis on peidetud. Kuna räsi leidmiseks
                 ei ole mingit algoritmi siis parim viis on hakata lihtsalt numbreid pakkuma. Kuna tasustatud saab see, kes
                 esimesena ploki lisab, siis kaevandamine on sisuliselt teistega võistlemine. Kuna PoW puhul peab võimalikult 
-                kiirelt räsi ära arvama, siis on see väga ressursi nõudlik tegevus. Siin saab kasutada <a href='pildid/videokaardid.png' target=blank>videokaarte</a>
-                või <a href='pildid/antminer.png' target=blank>spetsiaalset riistvara</a>.
-                <figure>
-                <img src='pildid/difficulty.png' alt='Kaevandamise raskus' width = 95%>
-                <figcaption>Kaevandamise raskus</figcaption>
-                </figure>
+                kiirelt räsi ära arvama, siis on see väga ressursi nõudlik tegevus. Siin saab kasutada 
+                <a class='pilt' id='videokaardid' href='pildid/videokaardid.png'>videokaarte</a>
+                või <a class='pilt' id='antminer' href='pildid/antminer.png'>spetsiaalset riistvara</a>.
             </p>
+            <figure>
+                <img class='graafik' src='pildid/difficulty.png' alt='Kaevandamise raskus'>
+                <figcaption>
+                    Kaevandamise raskus
+                    <br>
+                    Allikas <a class='allikas' href='https://www.blockchain.com/charts/difficulty'>Blockchain.com</a>
+                </figcaption>
+            </figure>
+            
         </div>
         <div class=column>
-            <h2>Proof of stake</h2>
+            <h1>Proof of stake</h1>
                 <p class='p2'>
                 PoS algoritm toimib natuke teistmoodi. Selles süsteemis saavad krüptovaluuta hoiustajad enda valuutat
                 <i>stake</i>-da. Need kes enda valuutat stakevad on "usaldatud" validaatorid. Kui tahetakse uut plokki ahelasse
@@ -39,8 +48,12 @@
                 Mida rohkem arvutusressurssi on süsteemis, seda raskemaks läheb kaevandamine.
                 </p>
                 <figure>
-                    <img src='pildid/hashrate.png' alt='Kogu hashrate' width = 95%>
-                    <figcaption>Kogu hashrate</figcaption>
+                    <img class='graafik' src='pildid/hashrate.png' alt='Kogu hashrate'>
+                    <figcaption>
+                        Kogu hashrate, TH/s (terahash per second)
+                        <br>
+                        Allikas: <a class='allikas' href="https://www.blockchain.com/charts/hash-rate">Blockchain.com</a>
+                    </figcaption>
                 </figure> 
         </div>
     </div>
